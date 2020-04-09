@@ -39,7 +39,38 @@ add_action( 'graphql_register_types', function() {
 									return $connection->get_connection();
 			}
 		]
-	);	
+	);
+	
+	// Register connection 
+	register_graphql_connection(
+		[
+			'fromType' 		=> 'Club',
+			'toType'		=> 'Player',
+			'fromFieldName' => 'Players', //Name of the field - can be whatever
+			'resolve'		=> function( $club, $args, $context, $info ){
+									$connection = new \WPGraphQL\Data\Connection\PostObjectConnectionResolver( $club, $args, $context, $info, 'sp_player' );
+
+									$players = new WP_Query([
+										'post_type'=>'sp_player', 
+										'fields'=> 'ids', 
+										'meta_query'=>[
+											[
+												'key'=>'sp_team', 
+												'value'=>$club->ID, 
+												'compare' => '=' 
+											]
+										] 
+									]);
+
+									// $players = get_post_meta( $club->ID, 'sp_player', false );
+									wp_send_json( $players );
+									$connection->setQueryArg( 'post_parent', 0 );
+									$connection->setQueryArg( 'post__in', $players->posts );
+									return $connection->get_connection();
+			}
+		]
+	);
+
 });
 
 
