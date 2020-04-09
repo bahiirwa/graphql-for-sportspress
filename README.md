@@ -1,4 +1,4 @@
-# SportsPress GraphQL
+# WPGraphQL for SportsPress
 
 <p align="center">
     <a href="#-install">Install</a> •
