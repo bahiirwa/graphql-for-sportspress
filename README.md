@@ -6,14 +6,6 @@ SportsPress GraphQL is a plugin that exposes the SportsPress Plugin Data to Grap
 
 Please test on a demo site first!
 
-<p align="center">
-    <a href="#-install">Install</a> •
-    <a href="#-contributing">Contributing</a> •
-    <a href="#-support">Support</a> •
-    <a href="#-license">License</a>
-</p>
-
-
 ### Install Dependencies
 
 You can install SportsPress GraphQL like any other WordPress Plugin. At only requests you to have
@@ -35,4 +27,4 @@ This project adheres to the adapted version of Contributor Covenant [code of con
 If you like SportsPress GraphQL and you want to support its development, consider donating via [PayPal](https://paypal.me/bahiirwa) 
 
 ## 📜 License
-[GPL2](http://www.gnu.org/licenses/gpl-2.0.txt) or Later
+[GPL3](https://www.gnu.org/licenses/gpl-3.0.html) or Later
