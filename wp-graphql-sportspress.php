@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name: GraphQL Data for SportPress
+ * Plugin Name: WPGraphQL for SportPress
  * Plugin URI: http://omukiguy.com
  * Author Name: Laurence bahiirwa
  * Author URI: https://omukiguy.com
- * Description: Expose the SportsPress Plugin Data to GraphQL Endpoint - Access sports data via domain.com/graphql
+ * Description: Expose the SportsPress sports Data to GraphQL Endpoint - Access sports data via domain.com/graphql
  * Version: 0.1.0
  * License: GPL2 or Later
  * License URL: http://www.gnu.org/licenses/gpl-2.0.txt
