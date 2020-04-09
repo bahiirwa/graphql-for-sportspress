@@ -6,7 +6,7 @@
  * Author URI: https://omukiguy.com
  * Description: Expose the SportsPress Plugin Data to GraphQL Endpoint - Access sports data via domain.com/graphql
  * Version: 0.1.0
- * License: 0.1.0
+ * License: GPL2 or Later
  * License URL: http://www.gnu.org/licenses/gpl-2.0.txt
  * text-domain: sportspress-graphql
 */
@@ -39,7 +39,8 @@ add_action( 'graphql_register_types', function() {
 									return $connection->get_connection();
 			}
 		]
-	);	
+	);
+
 });
 
 
