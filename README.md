@@ -1,5 +1,11 @@
 # WPGraphQL for SportsPress
 
+SportsPress GraphQL is a plugin that exposes the SportsPress Plugin Data to GraphQL Endpoint - Access sports data via domain.com/graphql
+
+**SportsPress GraphQL IS CURRENTLY IN EARLY DEVELOPMENT, NOT READY TO BE USED IN PRODUCTION.**
+
+Please test on a demo site first!
+
 <p align="center">
     <a href="#-install">Install</a> •
     <a href="#-contributing">Contributing</a> •
@@ -7,11 +13,6 @@
     <a href="#-license">License</a>
 </p>
 
-SportsPress GraphQL is a plugin that exposes the SportsPress Plugin Data to GraphQL Endpoint - Access sports data via domain.com/graphql
-
-**SportsPress GraphQL IS CURRENTLY IN EARLY DEVELOPMENT, NOT READY TO BE USED IN PRODUCTION.**
-
-Please test on a demo site first!
 
 ### Install Dependencies
 
